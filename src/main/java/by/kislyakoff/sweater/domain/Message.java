@@ -13,7 +13,16 @@ public class Message {
 	
 	private String text;
 	private String tag;
-	public String getText() {
+	
+	
+	public Message() { // empty constructor obligatory! if we have @Entity annotation we must use this one
+	}
+	
+	public Message(String text, String tag) { // Shortcut for generate constructor Alt+Shift+S, O
+		this.text = text;
+		this.tag = tag;
+	}
+	public String getText() { // Shortcut for generate constructor Alt+Shift+S, O
 		return text;
 	}
 	public void setText(String text) {
